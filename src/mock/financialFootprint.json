@@ -1,0 +1,232 @@
+{
+  "executiveSummary": "We analyzed 5 financial documents and detected evidence of 6 recurring financial obligations, 3 loan repayments, 3 insurance premium payments, 3 investment-related transactions, and 5 items requiring your attention.",
+  "overview": {
+    "totalItemsDetected": 20,
+    "totalRecurringMonthlySpend": 47850,
+    "totalLoans": 3,
+    "totalInsurance": 3,
+    "totalInvestments": 3,
+    "totalAttentionItems": 5,
+    "currency": "INR"
+  },
+  "recurringExpenses": [
+    {
+      "id": "re-001",
+      "name": "Netflix Premium Subscription",
+      "amount": 799,
+      "frequency": "monthly",
+      "category": "subscription",
+      "confidence": 95,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-15"
+    },
+    {
+      "id": "re-002",
+      "name": "Airtel Postpaid Mobile",
+      "amount": 999,
+      "frequency": "monthly",
+      "category": "utility",
+      "confidence": 92,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-08"
+    },
+    {
+      "id": "re-003",
+      "name": "Amazon Prime Membership",
+      "amount": 1499,
+      "frequency": "annual",
+      "category": "subscription",
+      "confidence": 88,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-20"
+    },
+    {
+      "id": "re-004",
+      "name": "Gym Membership - Gold's Gym",
+      "amount": 3500,
+      "frequency": "quarterly",
+      "category": "membership",
+      "confidence": 78,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-05"
+    },
+    {
+      "id": "re-005",
+      "name": "Electricity Bill - Tata Power",
+      "amount": 2800,
+      "frequency": "monthly",
+      "category": "utility",
+      "confidence": 91,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-22"
+    },
+    {
+      "id": "re-006",
+      "name": "House Maintenance Charges",
+      "amount": 4500,
+      "frequency": "monthly",
+      "category": "service",
+      "confidence": 85,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-01"
+    }
+  ],
+  "loans": [
+    {
+      "id": "ln-001",
+      "name": "HDFC Home Loan",
+      "emiAmount": 28500,
+      "outstandingAmount": 2450000,
+      "tenure": "15 years",
+      "loanType": "home",
+      "confidence": 96,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-05"
+    },
+    {
+      "id": "ln-002",
+      "name": "Maruti Suzuki Car Loan - ICICI",
+      "emiAmount": 12800,
+      "outstandingAmount": 385000,
+      "tenure": "5 years",
+      "loanType": "vehicle",
+      "confidence": 89,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-10"
+    },
+    {
+      "id": "ln-003",
+      "name": "Personal Loan - Bajaj Finance",
+      "emiAmount": 6550,
+      "outstandingAmount": null,
+      "tenure": "36 months",
+      "loanType": "personal",
+      "confidence": 72,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-15"
+    }
+  ],
+  "insurance": [
+    {
+      "id": "ins-001",
+      "name": "LIC Jeevan Anand Policy",
+      "premiumAmount": 24000,
+      "frequency": "annual",
+      "insuranceType": "life",
+      "confidence": 93,
+      "sourceDocument": "LIC_Premium_Receipt_2025.pdf",
+      "detectedOn": "2025-11-15"
+    },
+    {
+      "id": "ins-002",
+      "name": "Star Health Insurance - Family Floater",
+      "premiumAmount": 18500,
+      "frequency": "annual",
+      "insuranceType": "health",
+      "confidence": 87,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-10"
+    },
+    {
+      "id": "ins-003",
+      "name": "ICICI Lombard Car Insurance",
+      "premiumAmount": 8900,
+      "frequency": "annual",
+      "insuranceType": "vehicle",
+      "confidence": 81,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-22"
+    }
+  ],
+  "investments": [
+    {
+      "id": "inv-001",
+      "name": "SBI Bluechip Fund SIP",
+      "amount": 5000,
+      "investmentType": "sip",
+      "frequency": "monthly",
+      "confidence": 94,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-10"
+    },
+    {
+      "id": "inv-002",
+      "name": "HDFC Fixed Deposit",
+      "amount": 200000,
+      "investmentType": "fixed-deposit",
+      "frequency": "one-time",
+      "confidence": 91,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2025-06-15"
+    },
+    {
+      "id": "inv-003",
+      "name": "Zerodha Equity Holdings",
+      "amount": 45000,
+      "investmentType": "equity",
+      "frequency": null,
+      "confidence": 68,
+      "sourceDocument": "Investment_Statement_Q4_2025.pdf",
+      "detectedOn": "2025-12-31"
+    }
+  ],
+  "attentionItems": [
+    {
+      "id": "att-001",
+      "name": "Missed EMI Payment - Bajaj Personal Loan",
+      "description": "Evidence of a bounced auto-debit for the December 2025 EMI payment. A late payment fee of ₹750 was charged.",
+      "reason": "missed-payment",
+      "severity": "high",
+      "relatedAmount": 6550,
+      "confidence": 88,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2025-12-15"
+    },
+    {
+      "id": "att-002",
+      "name": "Unusual International Transaction",
+      "description": "A charge of $299 (approx ₹24,900) from an unrecognized merchant 'DGTL-SVCS-LLC' was detected on the credit card.",
+      "reason": "unusual-charge",
+      "severity": "high",
+      "relatedAmount": 24900,
+      "confidence": 76,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-18"
+    },
+    {
+      "id": "att-003",
+      "name": "Car Insurance Expiring Soon",
+      "description": "ICICI Lombard car insurance policy is due for renewal within 30 days. Non-renewal will result in lapsed coverage.",
+      "reason": "expiring-policy",
+      "severity": "medium",
+      "relatedAmount": 8900,
+      "confidence": 81,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-22"
+    },
+    {
+      "id": "att-004",
+      "name": "High Interest on Personal Loan",
+      "description": "The Bajaj Finance personal loan appears to carry an interest rate above 18% APR based on EMI-to-principal ratio analysis.",
+      "reason": "high-interest",
+      "severity": "medium",
+      "relatedAmount": 6550,
+      "confidence": 62,
+      "sourceDocument": "HDFC_Bank_Statement_Jan2026.pdf",
+      "detectedOn": "2026-01-15"
+    },
+    {
+      "id": "att-005",
+      "name": "Potential Duplicate Subscription",
+      "description": "Two streaming service charges detected: Netflix (₹799) and Netflix via iTunes (₹649). This may indicate a duplicate subscription.",
+      "reason": "duplicate",
+      "severity": "low",
+      "relatedAmount": 649,
+      "confidence": 55,
+      "sourceDocument": "ICICI_Credit_Card_Dec2025.pdf",
+      "detectedOn": "2025-12-05"
+    }
+  ],
+  "analyzedDocuments": 5,
+  "analyzedAt": "2026-01-28T14:30:00Z"
+}
